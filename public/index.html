@@ -1,14 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <h1>Hello It's me Ranjit K.C.</h1>
-    <h2>From Nepal.</h2>
-    <h3>Looking forward to meet you.</h3>
-</body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="main-div flex flex-col items-center  h-screen p-[1rem]">
+      <h1 class="text-[3rem] mb-[1rem] text-green-600 font-[700]">Contact Form</h1>
+      <form
+        action="/contact"
+        method="post"
+        class="flex flex-col h-[20rem] w-[20rem] rounded-md bg-green-300 border-[1px] p-[1rem]"
+      >
+        <input
+          type="text"
+          placeholder="Enter the username"
+          name="username"
+          id="username"
+          class="username h-[2.3rem] w-full bg-white rounded-md text-[1.2rem] text-black px-[10px] outline-none"
+        />
+        <textarea
+          type="text"
+          placeholder="Enter the some text.."
+          name="text"
+          id="text"
+          class="text h-[8rem] w-full bg-white rounded-md text-[1.2rem] mt-[1rem] text-black px-[10px] outline-none"
+        ></textarea>
+        <button
+          type="submit"
+          class="bg-green-600 text-white text-[1.3rem] font-[700] rounded-md mt-[1rem] h-[2.3rem] w-full"
+        >
+          Submit
+        </button>
+      </form>
+    </div>
+  </body>
 </html>
